@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/stu_regist_sys
+    username: root
+    password: 1user123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform:  org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  task:
+    scheduling:
+     pool:
+      size: 5
